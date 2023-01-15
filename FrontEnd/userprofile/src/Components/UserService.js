@@ -18,6 +18,9 @@ class UserService{
         return axios.delete(this.baseurl+id);
     }
     
+    insertUser(user){
+        return axios.post(this.baseurl,user);
+    }
 }
 
 export default new UserService();

@@ -126,7 +126,7 @@ public class DBManager
         return list;
     }
 
-     public static void InsertUser(string name,string addr)
+     public static void InsertUser(Users user)
     {
 
         
@@ -137,7 +137,7 @@ public class DBManager
 
             //
             conn.Open();
-            string query = $"Insert into users (name,addr) values ('{name}','{addr}')";
+            string query = $"Insert into users (name,addr) values ('{user.Name}','{user.Addr}')";
             DataSet ds = new DataSet();
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);

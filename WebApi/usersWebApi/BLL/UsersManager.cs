@@ -26,8 +26,8 @@ public class UsersManager
         return list;
     }
 
-    public static void InsertUser(string name,string addr){
+    public static void InsertUser(Users user){
         
-        DBManager.InsertUser(name,addr);
+        DBManager.InsertUser(user);
     }
 }

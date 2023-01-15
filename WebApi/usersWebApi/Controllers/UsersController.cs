@@ -54,8 +54,8 @@ public class UsersController : ControllerBase
     [EnableCors()]
     [HttpPost]
 
-    public void InsertUser(string name, string addr)
+    public void InsertUser(Users user)
     {
-        UsersManager.InsertUser(name, addr);
+        UsersManager.InsertUser(user);
     }
 }
