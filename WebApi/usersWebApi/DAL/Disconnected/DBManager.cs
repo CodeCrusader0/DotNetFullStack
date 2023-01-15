@@ -114,7 +114,6 @@ public class DBManager
                 int id = int.Parse(row["id"].ToString());
                 string name = row["name"].ToString();
                 string addr = row["addr"].ToString();
-
                 Users user = new Users(id, name, addr);
                 list.Add(user);
             };
